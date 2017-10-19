@@ -11,7 +11,7 @@ Git is the place where we code and keep the snapshot of the code that we did. Gi
 ## Initial Setup
 
 #### Creating A GitHub Account
-1. Go to [GitHub](www.github.com)
+1. Go to [GitHub](https://github.com/)
 2. Click on the _Sign Up_ on the top right of the site
 3. Input your _Username_, _Email Address_, and _Password_
 4. Click on _Create an Account_
@@ -22,12 +22,13 @@ Git is the place where we code and keep the snapshot of the code that we did. Gi
 
 #### Using SSH Key
 SSH key allows the user to connect the local remote or cloud9 to GitHub. The key allows GitHub to identify you, just like when you have to input your username and password to log in. GitHub remembers the key so it will know you are the one making the changes.
-1. Go to [GitHub](www.github.com)
+
+1. Go to [GitHub](https://github.com/)
 2. Select _Settings_ on the top right (your profile icon)
 3. Select _SSH and GPG keys_ on the sidebar located on the left
 4. Click on _New SSH key_
 5. Add a title
-6. On a new tab, go to [cloud9](c9.io)
+6. On a new tab, go to [cloud9](https://c9.io/)
 7. Sign in to cloud9
 8. Click on _Account Settings_ (the gear icon on the top right)
 9. Select _SSH Keys_ on the sidebar located on the left
@@ -43,7 +44,7 @@ SSH key allows the user to connect the local remote or cloud9 to GitHub. The key
 
 ---
 ## Repository Setup
-
+A respository is 
 
 
 ---
