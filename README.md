@@ -36,15 +36,40 @@ SSH key allows the user to connect the local remote or cloud9 to GitHub. The key
 11. Go back to the GitHub tab
 12. Paste the SSH Key in the _Key_ section
 13. Click _Add SSH key_
-14. Go to your **IDE** in cloud9
-15. Type `ssh -T git@github.com` in your **terminal**
-16. It should say something like `Hi <your username>! You've successfully authenticated, but GitHub does not provide shell access._`
-17. You finish connecting cloud9 to your private git repository
+14. Go to your **IDE** (Integrated Development Environment)in cloud9
+15. Type `ssh -T git@github.com` (This make your terminal knwo that it is connected to GitHub) in your **terminal**
+16. It should say something like "Hi <your username>! You've successfully authenticated, but GitHub does not provide shell access._"
+17. You finish connecting cloud9 to your private git repository!
 
 
 ---
 ## Repository Setup
-A respository is 
+A respository is the place where you store codes. You can take the code and bring the code down to your local remote or computer.
+
+1. Go to your **terminal**
+2. Make your your are in **workspace**, if not, `cd ~/workspace` (This will bring you to workspace)
+3. Make a new directory/folder using `mkdir` and give the folder a name
+4. Move into the folder with `cd` and the folder name
+5. Use `git init` to initialize the folder to make it able to work as git.
+6. Create a new file with `touch README.md` (This will create a file called README.md)
+7. Use `c9 README.md` to open the README file in your _cloud9 terminal_
+8. Add some texts in the file
+9. Save your changes
+10. In the terminal, use`git add .` to add all the new changes in the staging area
+11. `git status` to check what changes have been staged and what haven't
+12. Commit/snapshot the new changes using `git commit -m "your message"` (when committing, you need to add a message to tell you and/or others what that commit does. The message have to be in the present tense. Example: "Create a readme file")
+13. We will need a remote repo to push the commit into
+14. Go to [GitHub](https://github.com/) and login if not already
+15. Click on the _plus icon_ on the top right and select _New repository_
+16. Type in the **exact same name for your directory/folder** as the _Repository name_
+17. Click _Create repository_ on the bottom
+18. Verify your email if asked
+19. In quick setup, make sure SSH is selected
+20. Copy and paste each line of code under "...or psuh an existing repository from the command line" one at a time into your _c9 terminal_. This first line should be `git remote add origin URL` (The URL is the link to the repository that you just made). This line of code will create a bridge/path connecting your local remote to the repository. The second line should be `git push -u origin master`. This will tell the computer to remember where to push to, so we don't have to keep including the URL everytime we push. We just have to put this line of code once and next time we can just type `git push`.
+* To check the location of your remote use `git remote -v`
+* To remove your remote use `git remote rm origin`
+21. You finished setting up your own repository!
+
 
 
 ---
