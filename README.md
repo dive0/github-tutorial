@@ -65,7 +65,7 @@ A respository is the place where you store codes. You can take the code and brin
 17. Click _Create repository_ on the bottom
 18. Verify your email if asked
 19. In quick setup, make sure SSH is selected
-20. Copy and paste each line of code under "...or psuh an existing repository from the command line" one at a time into your _c9 terminal_. This first line should be `git remote add origin URL` (The URL is the link to the repository that you just made). This line of code will create a bridge/path connecting your local remote to the repository. The second line should be `git push -u origin master`. This will tell the computer to remember where to push to, so we don't have to keep including the URL everytime we push. We just have to put this line of code once and next time we can just type `git push`.
+20. Copy and paste each line of code under "...or psuh an existing repository from the command line" one at a time into your _c9 terminal_. This first line should be `git remote add origin URL` (The URL is the link to the repository that you just made). This line of code will create a bridge/path connecting your local repository to your remote repository. The second line should be `git push -u origin master`. This will tell the computer to remember where to push to, so we don't have to keep including the URL everytime we push. We just have to put this line of code once and next time we can just type `git push`.
 * To check the location of your remote use `git remote -v`
 * To remove your remote use `git remote rm origin`
 21. You finished setting up your own repository!
@@ -74,7 +74,9 @@ A respository is the place where you store codes. You can take the code and brin
 
 ---
 ## Workflow & Commands
-
+When making changes to your work, you should try to send those changes to GitHUb once you think it is a good place to commit. This will save your work virtually in GitHub and you can check what changes were made to the work. You will not lose your work when it is saved in GitHub. your can always get your work back even if your computer stopped, and get a new one. To save your work to GitHUb, follow these steps:
+1. After your think your work is ready to be save, type `git add .` in your terminal to add all your changes to the staging area.
+2. 
 
 
 ---
