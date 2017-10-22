@@ -81,11 +81,44 @@ When making changes to your work, you should try to send those changes to GitHub
 4. Commit/snapshot the new changes using `git commit -m "your message"` (when committing, you need to add a message to tell you and/or others what that commit does. The message have to be in the present tense. Example: "Create a readme file")
 5. Use `git status` to check that you have committed your changes
 6. Now push your commit(s) with `git push`. When setting up your repository you already told the computer to _remember_ where to push your commits to, so you do not have to tell it where you want your commits to be push to.
-7. USe `git status` again to check that your commit have been pushed
-8. **Repeat** these steps when trying to push to GitHub again
+7. **Repeat** these steps when trying to push to GitHub again
 
 
 ---
 ## Rolling Back Changes
+There will be times when you made some mistake and want to undo those changes. There are no undo button, and you can't use command(mac)/control(windows) z. You will need to type in some commands in your terminal.
+
+#### Undoing edit
+1. Use `git status` to check your current status
+2. Look for something like
+```HTML
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+```
+3. You will use the code that says "to discard changes in working directory". Do not include `...` and `<>` symbol.
+4. Change the word "file" to the name of your file
+5. The edits you made in your file will be undo
+
+#### Undoing `add`
+
+
+
+#### Undoing `commit`
+
+
+
+#### Undoing `push`
+
+
+
+
+
+
+
+
 
 
