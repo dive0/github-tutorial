@@ -13,11 +13,14 @@ Git is the place where we code and keep the snapshot of the code that we did. Gi
 #### Creating A GitHub Account
 1. Go to [GitHub](https://github.com/)
 2. Click on the _Sign Up_ on the top right of the site ![Alt sign up](sign_up.PNG)
-3. Input your _Username_, _Email Address_, and _Password_ ![Alt put info](Input_info.PNG)
+3. Input your _Username_, _Email Address_, and _Password_  
+![Alt put info](Input_info.PNG)
 4. Click on _Create an Account_  ![Alt create account](create.PNG)
-5. Choose a plan that you desire ![Alt Choose plan](plan.PNG)
+5. Choose a plan that you desire  
+![Alt Choose plan](plan.PNG)
 6. Click _Continue_ ![Alt continue](continue.PNG)
-7. Either fill out the tailor experience ![Alt survey](survey.PNG) or click _skip this step_ ![Alt skip survey](skip.PNG)
+7. Either fill out the tailor experience  or click _skip this step_ ![Alt skip survey](skip.PNG)  
+![Alt survey](survey.PNG)
 8. You created a GitHub account
 
 #### Using SSH Key
