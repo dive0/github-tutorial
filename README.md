@@ -169,3 +169,10 @@ You use this when you want to undo a commit that's in the remote repository.
 * To delete a commit from the remote, use `git reset --hard sha` (replace sha with the commit's sha that you want to remove). Then use `git push origin +master` to delete the commit
 
 
+---
+## Error Handling
+* You used `git init` in the wrong directory
+  * You may initialize the workspace and did not mean to do that.
+  * Use `rm rf .git` to recursively force `.git` to be remove 
+* 
+
