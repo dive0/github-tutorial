@@ -12,7 +12,7 @@ Git is the place where we code and keep the snapshot of the code that we did. Gi
 
 #### Creating A GitHub Account
 1. Go to [GitHub](https://github.com/)
-2. Click on the _Sign Up_ on the top right of the site <img src="sign_up.PNG" alt="sign up" width="42" height="42">
+2. Click on the _Sign Up_ on the top right of the site ![Alt sign up](sign_up.PNG)
 3. Input your _Username_, _Email Address_, and _Password_
 4. Click on _Create an Account_
 5. Choose a plan that you desire
