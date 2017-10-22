@@ -89,7 +89,7 @@ When making changes to your work, you should try to send those changes to GitHub
 There will be times when you made some mistake and want to undo those changes. You can't use command(mac)/control(windows) z. You will need to type in some commands in your terminal.
 
 #### Undoing edit
-You will use this when you work with someone on the same repository and you accidently change something in the file. This may cause a problem when they merge the changes together.
+You will use this when you work with someone on the same repository and you accidentally change something in the file. This may cause a problem when they merge the changes together.
 1. Use `git status` to check your current status
 2. Look for something like
 ```HTML
@@ -106,7 +106,7 @@ Changes not staged for commit:
 
 
 #### Undoing `add`
-You will use this when you accidently added multiple file when you only want to add a specific file.
+You will use this when you accidentlly added multiple files when you only want to add a specific file.
 1. You added your file to the staging area and realize you don't want to add it
 2. Use `git status` to see if the file is added to the staging area. It is added when the file is green
 3. You should see something like 
@@ -117,7 +117,7 @@ Your branch is up-to-date with 'origin/master'.
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 ```
-4. Use the code that says "to unsatge" to undo added files. Do not include `...` and `<>` symbol.
+4. Use the code that says "to unstage" to undo added files. Do not include `...` and `<>` symbol.
 5. Change the word "file" to the name of your file
 6. Use `git status` again and you will see that the file is red
 7. You undo your added file(s)
@@ -128,11 +128,11 @@ You will use this if you want to change your commit message. There are different
 * `HEAD~1` means to move the HEAD 1 commit back
 * `git reset --hard HEAD~1`
   * This will nuke/delete the current commit
-  * Since `--hard` was used, your file will changed to the state of the previous commit. Your changes are deleted
+  * Since `--hard` was used, your file will change to the state of the previous commit. Your changes are deleted
 * `git reset HEAD~1`
-  * Your commit will be undo, and your changes will still be present. You will be able to continue the changes you made. The file in the staging area will be deleted
+  * Your commit will be undone, and your changes will still be present. You will be able to continue the changes you made. The file in the staging area will be deleted
 * `git reset --soft HEAD~1`
-  * Your commit will be undo, and your file and the staging area not be changed. The file will still be in the staging area.
+  * Your commit will be undone, and your file and the staging area not be changed. The file will still be in the staging area.
 * `git reflog`
   * Use this when you want to recover a commit that you destroyed
   * This code will show a list of commit shas
@@ -141,7 +141,12 @@ You will use this if you want to change your commit message. There are different
 
 
 #### Undoing `push`
-
+You use this when you want to undo a commit that's in the remote repository.
+1. Use `git log` to show all your commit sha
+2. The commit area order from the most recent (top of the list), to first commit (bottom of the list)
+3. Find the sha for the commit that you want to unpush
+4. Type `git revert sha` replace sha with the sha that you want to unpush. You can unpush multiple commits by including their sha next to each other separated by a space.
+* To delete a commit from the remote, use `git reset --hard sha` (replace sha with the commit's sha that you want to remove). Then use `git push origin +master` to delete the commit
 
 
 
