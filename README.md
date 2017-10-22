@@ -106,7 +106,7 @@ Changes not staged for commit:
 
 
 #### Undoing `add`
-You will use this when you accidentlly added multiple files when you only want to add a specific file.
+You will use this when you accidentally added multiple files when you only want to add a specific file.
 1. You added your file to the staging area and realize you don't want to add it
 2. Use `git status` to see if the file is added to the staging area. It is added when the file is green
 3. You should see something like 
@@ -126,18 +126,38 @@ Changes to be committed:
 #### Undoing `commit`
 You will use this if you want to change your commit message. There are different codes to undo a commit, and each code has its own effect.
 * `HEAD~1` means to move the HEAD 1 commit back
+* `git reset --soft HEAD~1`
+  * Your commit will be undone, and your file and the staging area not be changed. The file will still be in the staging area.
+
+
+#### Undoing `commit` And `add`
+This is used when you want to add or change something in the commit.
+* `git reset HEAD~1`
+  * Your commit will be undone, and your changes will still be present. You will be able to continue the changes you made. The file in the staging area will be deleted
+
+
+#### Undoing `commit` and `add` And edits
+This is used to delete the whole changes along with the commit and the file in the staging area.
 * `git reset --hard HEAD~1`
   * This will nuke/delete the current commit
   * Since `--hard` was used, your file will change to the state of the previous commit. Your changes are deleted
-* `git reset HEAD~1`
-  * Your commit will be undone, and your changes will still be present. You will be able to continue the changes you made. The file in the staging area will be deleted
-* `git reset --soft HEAD~1`
-  * Your commit will be undone, and your file and the staging area not be changed. The file will still be in the staging area.
-* `git reflog`
-  * Use this when you want to recover a commit that you destroyed
-  * This code will show a list of commit shas
-  * Use `git checkout -b someNewBranchName shaYouDestroyed` when you found the sha for the commit that you destroyed. Replace `someNewBranchName` with a new name and `shaYouDestroyed` with the sha that you destroyed
 
+
+#### `Checkout` from a destroyed `commit`
+This allows you to temporarily go back to a destroyed commit.
+* Use this when you want to recover a commit that you destroyed
+  * `git log`
+  * This code will show a list of commit shas
+  * Use `git checkout -b someNewBranchName shaYouDestroyed` when you found the sha for the commit that you destroyed. Replace `someNewBranchName` with a new name and `shaYouDestroyed` with the sha that you destroyed. This will bring you back to the commit that you destroyed and make another commit at the same time.
+  * You can also use `git checkout -b shaYouDestroyed` to just bring you back to the destroyed commit and not making another commit.
+
+
+#### `Revert` to a previous `commit`
+This will help you go back to a previous `commit` without changing the history of your work.
+* Use `git revert sha` to revert the commit represented by the sha
+* `git revert HEAD~2..HEAD` will revert the last 2 commits (This is a range from different places)
+* `git revert sha1..sha4` is also a range but using the commit sha
+* `git revert -m 1 merge_commit_sha` this will revert to the commit that was merged. Change "merge_commit_sha" to commit sha that was merged.
 
 
 #### Undoing `push`
@@ -147,12 +167,5 @@ You use this when you want to undo a commit that's in the remote repository.
 3. Find the sha for the commit that you want to unpush
 4. Type `git revert sha` replace sha with the sha that you want to unpush. You can unpush multiple commits by including their sha next to each other separated by a space.
 * To delete a commit from the remote, use `git reset --hard sha` (replace sha with the commit's sha that you want to remove). Then use `git push origin +master` to delete the commit
-
-
-
-
-
-
-
 
 
