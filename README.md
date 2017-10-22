@@ -187,7 +187,20 @@ You use this when you want to undo a commit that's in the remote repository.
 ## Error Handling
 * You used `git init` in the wrong directory
   * You may initialize the workspace and did not mean to do that.
-  * Use `rm rf .git` to recursively force `.git` to be remove 
+  * Use `rm -rf .git` to recursively force `.git` to be remove 
+  * ![Alt Init workspace](git init.PNG)
+* You want to delete a local repository
+  * Use `rm -rf <file>` to delete the local repository. Change <file> to your file name
+* You want to delete your remote repository
+  1. Open your remote repository in [GitHub](https://github.com/)
+  2. Click on _setting_ for the repository ![Alt repo setting](repo_setting.PNG)
+  3. Scroll to the bottom of the page to where it says **Danger Zone**  
+  ![Alt danger zone](Danger.PNG)
+  4. Select _Delete this repository_ ![Alt delete](delete.PNG)
+  5. Input your repository name and click _I understand the consequences, delete this repository_ ![Alt confirm](confirm.PNG)
+  6. You successfully deleted your repository
+
+
 
 
 ## Collaboration
@@ -209,7 +222,7 @@ You use this when you want to undo a commit that's in the remote repository.
 15. You will see a list of request. You can either accept or unaccept the request(s)
 16. If you accept the request, you will need to bring the changes down to your local repository. Use `git pull` in your local repository to bring down your accepted changes. ![Alt pull request](pull_request.PNG)
 17. You successful collaborated with others on the same work.
-1
+
 
 
 
