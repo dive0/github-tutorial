@@ -27,21 +27,27 @@ Git is the place where we code and keep the snapshot of the code that we did. Gi
 SSH key allows the user to connect the local remote or cloud9 to GitHub. The key allows GitHub to identify you, just like when you have to input your username and password to log in. GitHub remembers the key so it will know you are the one making the changes.
 
 1. Go to [GitHub](https://github.com/)
-2. Select _Settings_ on the top right (your profile icon)
-3. Select _SSH and GPG keys_ on the sidebar located on the left
-4. Click on _New SSH key_
-5. Add a title
+2. Select _Settings_ on the top right (your profile icon)  
+![Alt settings](setting.PNG)
+3. Select _SSH and GPG keys_ on the sidebar located on the left  
+![Alt sidebar](side_bar.PNG)
+4. Click on _New SSH key_ ![Alt new ssh](new_ssh.PNG)
+5. Add a title ![Alt title](Title.PNG)
 6. On a new tab, go to [cloud9](https://c9.io/)
-7. Sign in to cloud9
-8. Click on _Account Settings_ (the gear icon on the top right)
-9. Select _SSH Keys_ on the sidebar located on the left
-10. Copy the **second** SSH key
-11. Go back to the GitHub tab
-12. Paste the SSH Key in the _Key_ section
+7. Sign in to cloud9 with GitHub ![Alt sign in](sign_in.PNG) 
+8. Click on _Account Settings_ (the gear icon on the top right) ![Alt settings](gear.PNG)
+9. Select _SSH Keys_ on the sidebar located on the left  
+![Alt sidebar](side_bar1.PNG)
+10. Copy the **second** SSH key  
+![Alt SSH](SSH.PNG)
+11. Go back to the GitHub page
+12. Paste the SSH Key in the _Key_ section  
+![Alt key](key.PNG)
 13. Click _Add SSH key_
-14. Go to your **IDE** (Integrated Development Environment)in cloud9
+14. Go to your **IDE** (Integrated Development Environment) in cloud9
 15. Type `ssh -T git@github.com` (This make your terminal know that it is connected to GitHub) in your **terminal**
-16. It should say something like "Hi <your username>! You've successfully authenticated, but GitHub does not provide shell access._"
+16. It should say something like "Hi <your username>! You've successfully authenticated, but GitHub does not provide shell access._"  
+![Alt result](result.PNG)
 17. You finish connecting cloud9 to your private git repository!
 
 
