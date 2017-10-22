@@ -199,7 +199,10 @@ You use this when you want to undo a commit that's in the remote repository.
   4. Select _Delete this repository_ ![Alt delete](delete.PNG)
   5. Input your repository name and click _I understand the consequences, delete this repository_ ![Alt confirm](confirm.PNG)
   6. You successfully deleted your repository
-
+* You committed a file right after creating it
+  * An error appeared  
+  ![Alt did not add](not_adding.PNG)
+  * You have to `git add .` before commiting any changes
 
 
 
