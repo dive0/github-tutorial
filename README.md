@@ -116,7 +116,7 @@ Changes not staged for commit:
 ```
 3. You will use the code that says "to discard changes in working directory". This will undo your edit. Do not include `...` and `<>` symbol. 
 4. Change the word "file" to the name of your file 
-5. The edits you made in your file will be undo. You can check it when your file is green when using `git status`.
+5. The edits you made in your file will be undo. You can check it when your file is green when using `git status`. 
 
 
 #### Undoing `add`
@@ -188,24 +188,29 @@ You use this when you want to undo a commit that's in the remote repository.
 * You used `git init` in the wrong directory
   * You may initialize the workspace and did not mean to do that.
   * Use `rm rf .git` to recursively force `.git` to be remove 
-* 
 
 
 ## Collaboration
 1. Go to [GitHub](https://github.com/)
 2. _Login_ to your account
 3. Go to other person's repository
-4. Click on *fork* on the top right. The number next to it shows how many times the repository had beem forked. (You are making a copy of their repository and bring it to your own account)
-5. Clone the repositoryto your local repository by clicking the green button that says "Clone or download"
-6. Copy the link. Make sure it says "Clone with SSH" as the header of the box. If not, click "use SSH" on the top right of the box.
+4. Click on *fork* on the top right. The number next to it shows how many times the repository had beem forked. (You are making a copy of their repository and bring it to your own account) ![Alt fork](fork.PNG)
+5. Clone the repository to your local repository by clicking the green button that says "Clone or download" ![Alt clone](clone.PNG)
+6. Copy the link. Make sure it says "Clone with SSH" as the header of the box. If not, click "use SSH" on the top right of the box.  
+![Alt Clone](clone_box.PNG)
 7. Go to your terminal and type `git clone URL`. Change the URL to the link you just copied.
 8. A new folder should appear and you can make changes in it.
 9. When you want to push the changes to the remote repository, the other person that you forked from will not recieve the changes. You will have to make a pull request when you what that person to see the changes you made and decide whether or not they want the changes. You will need to push the changes to your own repository first.
 10. To make a pull request, go to your repository in GitHub
-11. Click on "New pull request", right unnder the number of commits
-12. Click "Create new pull requestion"
-13. Click "Create new pull requestion" again
+11. Click on "New pull request", right under the number of commits ![Alt pull request](new_pull.PNG)
+12. Click "Create new pull requestion" ![Alt create pull](create_pull.PNG)
+13. Click "Create new pull requestion" again ![Alt create pull](create_pull.PNG)
 14. If you recieve a request you will click on "Pull requests" on the top
 15. You will see a list of request. You can either accept or unaccept the request(s)
-16. If you accept the request, you will need to bring the changes down to your local repository. Use `git pull` in your local repository to bring down your accepted changes.
+16. If you accept the request, you will need to bring the changes down to your local repository. Use `git pull` in your local repository to bring down your accepted changes. ![Alt pull request](pull_request.PNG)
 17. You successful collaborated with others on the same work.
+1
+
+
+
+
