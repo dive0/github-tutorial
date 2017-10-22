@@ -80,7 +80,7 @@ A repository is a place where you store codes. You can take the code and bring t
 20. Copy and paste each line of code under "...or push an existing repository from the command line" one at a time into your _c9 terminal_. This first line should be `git remote add origin URL` (The URL is the link to the repository that you just made). This line of code will create a bridge/path connecting your local repository to your remote repository. The second line should be `git push -u origin master`. This will tell the computer to _remember_ where to push to, so we don't have to keep including the URL everytime we push. We just have to put this line of code once and next time we can just type `git push`.  
 ![Alt 2 codes](2_codes.PNG)
 * To check the location of your remote use `git remote -v`
-![Alt example3](example.PNG)
+![Alt example3](example2.PNG)
 * To remove your remote use `git remote rm origin`
 21. You finished setting up your own repository!
 
@@ -95,8 +95,8 @@ When making changes to your work, you should try to send those changes to GitHub
 4. Commit/snapshot the new changes using `git commit -m "your message"` (when committing, you need to add a message to tell you and/or others what that commit does. The message have to be in the present tense. Example: "Create a readme file")
 5. Use `git status` to check that you have committed your changes
 6. Now push your commit(s) with `git push`. When setting up your repository you already told the computer to _remember_ where to push your commits to, so you do not have to tell it where you want your commits to be push to.
-7. **Repeat** these steps when trying to push to GitHub again
-
+7. **Repeat** these steps when trying to push to GitHub again  
+![Alt example2](example3.PNG)
 
 ---
 ## Rolling Back Changes
