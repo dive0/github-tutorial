@@ -61,21 +61,26 @@ A repository is a place where you store codes. You can take the code and bring t
 4. Move into the folder with `cd` and the folder name
 5. Use `git init` to initialize the folder to make it able to work as git.
 6. Create a new file with `touch README.md` (This will create a file called README.md)
-7. Use `c9 README.md` to open the README file in your _cloud9 terminal_
+7. Use `c9 README.md` to open the README file in your _cloud9 terminal_  
+![Alt example](example.PNG)
 8. Add some texts in the file
 9. Save your changes
 10. In the terminal, use`git add .` to add all the new changes in the staging area
 11. `git status` to check what changes have been staged and what haven't
-12. Commit/snapshot the new changes using `git commit -m "your message"` (when committing, you need to add a message to tell you and/or others what that commit does. The message have to be in the present tense. Example: "Create a readme file")
+12. Commit/snapshot the new changes using `git commit -m "your message"` (when committing, you need to add a message to tell you and/or others what that commit does. The message have to be in the present tense. Example: "Create a readme file")  
+![Alt example2](example1.PNG)
 13. We will need a remote repo to push the commit into
 14. Go to [GitHub](https://github.com/) and login if not already
-15. Click on the _plus icon_ on the top right and select _New repository_
-16. Type in the **exact same name for your directory/folder** as the _Repository name_
-17. Click _Create repository_ on the bottom
+15. Click on the _plus icon_ on the top right and select _New repository_  
+![Alt add](add.PNG)
+16. Type in the **exact same name for your directory/folder** as the _Repository name_ ![Alt repo name](repo_name.PNG)
+17. Click _Create repository_ on the bottom ![Alt create repo](create_repo.PNG)
 18. Verify your email if asked
-19. In quick setup, make sure SSH is selected
-20. Copy and paste each line of code under "...or push an existing repository from the command line" one at a time into your _c9 terminal_. This first line should be `git remote add origin URL` (The URL is the link to the repository that you just made). This line of code will create a bridge/path connecting your local repository to your remote repository. The second line should be `git push -u origin master`. This will tell the computer to _remember_ where to push to, so we don't have to keep including the URL everytime we push. We just have to put this line of code once and next time we can just type `git push`.
+19. In quick setup, make sure SSH is selected ![Alt select](select.PNG)
+20. Copy and paste each line of code under "...or push an existing repository from the command line" one at a time into your _c9 terminal_. This first line should be `git remote add origin URL` (The URL is the link to the repository that you just made). This line of code will create a bridge/path connecting your local repository to your remote repository. The second line should be `git push -u origin master`. This will tell the computer to _remember_ where to push to, so we don't have to keep including the URL everytime we push. We just have to put this line of code once and next time we can just type `git push`.  
+![Alt 2 codes](2_codes.PNG)
 * To check the location of your remote use `git remote -v`
+![Alt example3](example2.PNG)
 * To remove your remote use `git remote rm origin`
 21. You finished setting up your own repository!
 
