@@ -37,17 +37,17 @@ SSH key allows the user to connect the local remote or cloud9 to GitHub. The key
 12. Paste the SSH Key in the _Key_ section
 13. Click _Add SSH key_
 14. Go to your **IDE** (Integrated Development Environment)in cloud9
-15. Type `ssh -T git@github.com` (This make your terminal knwo that it is connected to GitHub) in your **terminal**
+15. Type `ssh -T git@github.com` (This make your terminal know that it is connected to GitHub) in your **terminal**
 16. It should say something like "Hi <your username>! You've successfully authenticated, but GitHub does not provide shell access._"
 17. You finish connecting cloud9 to your private git repository!
 
 
 ---
 ## Repository Setup
-A respository is the place where you store codes. You can take the code and bring the code down to your local remote or computer.
+A repository is a place where you store codes. You can take the code and bring the code down to your local remote or computer.
 
 1. Go to your **terminal**
-2. Make your your are in **workspace**, if not, `cd ~/workspace` (This will bring you to workspace)
+2. Make sure you are in **workspace**, if not, `cd ~/workspace` (This will bring you to workspace)
 3. Make a new directory/folder using `mkdir` and give the folder a name
 4. Move into the folder with `cd` and the folder name
 5. Use `git init` to initialize the folder to make it able to work as git.
@@ -65,7 +65,7 @@ A respository is the place where you store codes. You can take the code and brin
 17. Click _Create repository_ on the bottom
 18. Verify your email if asked
 19. In quick setup, make sure SSH is selected
-20. Copy and paste each line of code under "...or psuh an existing repository from the command line" one at a time into your _c9 terminal_. This first line should be `git remote add origin URL` (The URL is the link to the repository that you just made). This line of code will create a bridge/path connecting your local repository to your remote repository. The second line should be `git push -u origin master`. This will tell the computer to remember where to push to, so we don't have to keep including the URL everytime we push. We just have to put this line of code once and next time we can just type `git push`.
+20. Copy and paste each line of code under "...or push an existing repository from the command line" one at a time into your _c9 terminal_. This first line should be `git remote add origin URL` (The URL is the link to the repository that you just made). This line of code will create a bridge/path connecting your local repository to your remote repository. The second line should be `git push -u origin master`. This will tell the computer to _remember_ where to push to, so we don't have to keep including the URL everytime we push. We just have to put this line of code once and next time we can just type `git push`.
 * To check the location of your remote use `git remote -v`
 * To remove your remote use `git remote rm origin`
 21. You finished setting up your own repository!
@@ -74,10 +74,18 @@ A respository is the place where you store codes. You can take the code and brin
 
 ---
 ## Workflow & Commands
-When making changes to your work, you should try to send those changes to GitHUb once you think it is a good place to commit. This will save your work virtually in GitHub and you can check what changes were made to the work. You will not lose your work when it is saved in GitHub. your can always get your work back even if your computer stopped, and get a new one. To save your work to GitHUb, follow these steps:
-1. After your think your work is ready to be save, type `git add .` in your terminal to add all your changes to the staging area.
-2. 
+When making changes to your work, you should try to send those changes to GitHub once you think it is a good place to commit. This will save your work virtually in GitHub and you can check what changes were made to the work. You will not lose your work when it is saved in GitHub. You can always get your work back even if your computer stopped, and have to get a new one. To save your work to GitHub, follow these steps:
+1. After you think your work is ready to be saved, use `git status` to check that your file had been modified. This will be shown in red when you having added the modified file to the staging area. (You will use this command a lot to check what you did or your current status on your work.)
+2. Type `git add .` to add all your changes to the staging area.
+3. Use `git status` to check that your modified file is in the staging area. This time the word will change to the color green.
+4. Commit/snapshot the new changes using `git commit -m "your message"` (when committing, you need to add a message to tell you and/or others what that commit does. The message have to be in the present tense. Example: "Create a readme file")
+5. Use `git status` to check that you have committed your changes
+6. Now push your commit(s) with `git push`. When setting up your repository you already told the computer to _remember_ where to push your commits to, so you do not have to tell it where you want your commits to be push to.
+7. USe `git status` again to check that your commit have been pushed
+8. **Repeat** these steps when trying to push to GitHub again
 
 
 ---
 ## Rolling Back Changes
+
+
