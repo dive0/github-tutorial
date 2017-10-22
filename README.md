@@ -124,6 +124,19 @@ Changes to be committed:
 
 
 #### Undoing `commit`
+You will use this if you want to change your commit message. There are different codes to undo a commit, and each code has its own effect.
+* `HEAD~1` means to move the HEAD 1 commit back
+* `git reset --hard HEAD~1`
+  * This will nuke/delete the current commit
+  * Since `--hard` was used, your file will changed to the state of the previous commit. Your changes are deleted
+* `git reset HEAD~1`
+  * Your commit will be undo, and your changes will still be present. You will be able to continue the changes you made. The file in the staging area will be deleted
+* `git reset --soft HEAD~1`
+  * Your commit will be undo, and your file and the staging area not be changed. The file will still be in the staging area.
+* `git reflog`
+  * Use this when you want to recover a commit that you destroyed
+  * This code will show a list of commit shas
+  * Use `git checkout -b someNewBranchName shaYouDestroyed` when you found the sha for the commit that you destroyed. Replace `someNewBranchName` with a new name and `shaYouDestroyed` with the sha that you destroyed
 
 
 
