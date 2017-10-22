@@ -80,7 +80,7 @@ A repository is a place where you store codes. You can take the code and bring t
 20. Copy and paste each line of code under "...or push an existing repository from the command line" one at a time into your _c9 terminal_. This first line should be `git remote add origin URL` (The URL is the link to the repository that you just made). This line of code will create a bridge/path connecting your local repository to your remote repository. The second line should be `git push -u origin master`. This will tell the computer to _remember_ where to push to, so we don't have to keep including the URL everytime we push. We just have to put this line of code once and next time we can just type `git push`.  
 ![Alt 2 codes](2_codes.PNG)
 * To check the location of your remote use `git remote -v`
-![Alt example3](example2.PNG)
+![Alt example3](example.PNG)
 * To remove your remote use `git remote rm origin`
 21. You finished setting up your own repository!
 
