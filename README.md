@@ -67,7 +67,7 @@ A repository is a place where you store codes. You can take the code and bring t
 9. Save your changes
 10. In the terminal, use`git add .` to add all the new changes in the staging area
 11. `git status` to check what changes have been staged and what haven't
-12. Commit/snapshot the new changes using `git commit -m "your message"` (when committing, you need to add a message to tell you and/or others what that commit does. The message have to be in the present tense. Example: "Create a _Read.me_ file")  
+12. Commit/snapshot the new changes using `git commit -m "your message"` (when committing, you need to add a message to tell you and/or others what that commit does. The message have to be in the present tense. Example: "Create a _Readme_ file")  
 ![Alt example2](example1.PNG)
 13. We will need a remote repo to store the commits
 14. Go to [GitHub](https://github.com/) and login if not already
