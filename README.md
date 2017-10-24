@@ -105,7 +105,7 @@ There will be times when you made some mistake and want to undo those changes. Y
 #### Undoing edit
 You will use this when you work with someone on the same repository and you accidentally change something in the file. This may cause a problem when they merge the changes together.
 1. Use `git status` to check your current status when you make a change and haven't push it yet.
-2. Look for something like
+2. Look for something like  
 ```  
 On branch master  
 Your branch is up-to-date with 'origin/master'.  
@@ -123,7 +123,7 @@ Changes not staged for commit:
 You will use this when you accidentally added multiple files when you only want to add a specific file.
 1. You added your file to the staging area and realize you don't want to add it
 2. Use `git status` to see if the file is added to the staging area. It is added when the file is green
-3. You should see something like 
+3. You should see something like  
 ```  
 On branch master  
 Your branch is up-to-date with 'origin/master'.  
